@@ -10,10 +10,11 @@
 - Quiz1_2: 練習 Set 常用函式
 - Quiz1_3: 練習 Map 常用函式
 - Quiz1_4: 練習 Object Method override 時機與修改方式
+  - 修改 `Person` 類別，通過測試
 
 **Action:**
 
-請完成 `Quiz1_x` 類別，修改 `Person` 類別，使其對應的測試類別 `Quiz1_xTest` 通過所有測試。
+請完成 `Quiz1_x` 類別，使其對應的測試類別 `Quiz1_xTest` 通過所有測試。
 
 ※ 不可使用 Stream 方式完成
 
