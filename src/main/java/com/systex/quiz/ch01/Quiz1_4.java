@@ -10,12 +10,12 @@ import java.util.Set;
 
 public class Quiz1_4 {
 
-    public Set<Person> getUniqueElementsFrom2Lists(List<Person> list1, List<Person> list2) {
+    public Set<Person> getUnionFrom2Lists(List<Person> list1, List<Person> list2) {
         // Todo Case
         return Collections.emptySet();
     }
 
-    public Set<Person> getCommonElementsFrom2Sets(Set<Person> set1, Set<Person> set2) {
+    public Set<Person> getIntersectionFrom2Sets(Set<Person> set1, Set<Person> set2) {
         // Todo Case
         return Collections.emptySet();
     }
