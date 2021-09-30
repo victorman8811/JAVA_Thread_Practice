@@ -109,13 +109,12 @@ public class Quiz1_3Test {
     @Test
     void maxNumber() {
         HashMap<String, Integer> input = new HashMap<>();
-        input.put("a", 100);
-        input.put("b", 90);
-        input.put("c", 80);
-        input.put("d", 70);
-        input.put("e", 60);
-        input.put("f", 50);
-        input.put("g", 40);
+        input.put("a", 2);
+        input.put("b", 3);
+        input.put("c", 5);
+        input.put("d", 7);
+        input.put("e", 11);
+        input.put("f", 13);
         int res = quiz.maxNumber(input);
         assertEquals(13, res);
     }
@@ -123,13 +122,12 @@ public class Quiz1_3Test {
     @Test
     void sumAllNumbers() {
         HashMap<String, Integer> input = new HashMap<>();
-        input.put("a", 100);
-        input.put("b", 90);
-        input.put("c", 80);
-        input.put("d", 70);
-        input.put("e", 60);
-        input.put("f", 50);
-        input.put("g", 40);
+        input.put("a", 2);
+        input.put("b", 3);
+        input.put("c", 5);
+        input.put("d", 7);
+        input.put("e", 11);
+        input.put("f", 13);
         int res = quiz.sumAllNumbers(input);
         assertEquals(41, res);
     }
@@ -137,13 +135,12 @@ public class Quiz1_3Test {
     @Test
     void itemCounts() {
         HashMap<String, Integer> input = new HashMap<>();
-        input.put("a", 100);
-        input.put("b", 90);
-        input.put("c", 80);
-        input.put("d", 70);
-        input.put("e", 60);
-        input.put("f", 50);
-        input.put("g", 40);
+        input.put("a", 2);
+        input.put("b", 3);
+        input.put("c", 5);
+        input.put("d", 7);
+        input.put("e", 11);
+        input.put("f", 13);
         int res = quiz.itemCounts(input);
         assertEquals(6, res);
     }
