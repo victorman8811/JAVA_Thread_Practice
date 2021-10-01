@@ -20,17 +20,26 @@ public class Quiz1_4Test {
 
     @Test
     void getIntersectionFrom2Sets() {
-        HashSet<Person> set1 = new HashSet<Person>();
+        HashSet<Person> set1 = new HashSet<>();
         set1.add(new Person("張學友"));
         set1.add(new Person("周杰倫"));
+        HashSet<Person> origSet1 = new HashSet<>();
+        origSet1.add(new Person("張學友"));
+        origSet1.add(new Person("周杰倫"));
 
-        HashSet<Person> set2 = new HashSet<Person>();
+        HashSet<Person> set2 = new HashSet<>();
         set2.add(new Person("周潤發"));
         set2.add(new Person("周杰倫"));
+        HashSet<Person> origSet2 = new HashSet<>();
+        origSet2.add(new Person("周潤發"));
+        origSet2.add(new Person("周杰倫"));
 
-        Assertions.assertEquals("[周杰倫]", quiz.getIntersectionFrom2Sets(set1, set2).toString());
-        Assertions.assertEquals("[張學友, 周杰倫]", set1.toString());
-        Assertions.assertEquals("[周潤發, 周杰倫]", set2.toString());
+        HashSet<Person> set = new HashSet<>();
+        set.add(new Person("周杰倫"));
+
+        Assertions.assertTrue(set.equals(quiz.getIntersectionFrom2Sets(set1, set2)));
+        Assertions.assertTrue(set1.equals(origSet1));
+        Assertions.assertTrue(set2.equals(origSet2));
     }
 
     @Test
@@ -38,7 +47,12 @@ public class Quiz1_4Test {
         List<Person> list1 = Arrays.asList(new Person("張學友"), new Person("周杰倫"));
         List<Person> list2 = Arrays.asList(new Person("周潤發"), new Person("周杰倫"));
 
-        Assertions.assertEquals("[周潤發, 張學友, 周杰倫]", quiz.getUnionFrom2Lists(list1, list2).toString());
+        HashSet<Person> set = new HashSet<>();
+        set.add(new Person("周潤發"));
+        set.add(new Person("張學友"));
+        set.add(new Person("周杰倫"));
+
+        Assertions.assertTrue(set.equals(quiz.getUnionFrom2Lists(list1, list2)));
         Assertions.assertEquals("[張學友, 周杰倫]", list1.toString());
         Assertions.assertEquals("[周潤發, 周杰倫]", list2.toString());
     }
