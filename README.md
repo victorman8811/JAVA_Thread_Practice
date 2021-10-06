@@ -86,10 +86,21 @@
 
 ## Chapter 4
 
-※ 請先在本地安裝 Postgresql
+本章節將練習使用JDBC對資料庫進行簡單的CRUD操作
 
-本章節將練習使用 SQL
+其中需完成以下內容：
 
-其中包含案例如下：
+- 在本機安裝postgresql
+  - https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=924
+- 建立後續例題需使用的任務清單table
+  - 取名為task_table
+  - 欄位包含task_seq設為PK，並會自動產生序號。
+  - 欄位包含task_name，用於儲存任務名且不可為空。
+  - 欄位包含description，用於儲存任務說明。
+- postgre driver需於MAVEN設定依賴。
+- 完成CRUD各功能，資料內容、實作方式不拘。
+- 基於上述完成的內容，寫出合理的test case以說明程式的正確性。
 
-- Quiz4_1: 練習使用 jdbc 與資料庫互動、修改資料
+**Action**
+
+請於 `Quiz4` 類別完成CRUD各功能實作，並於`Quiz4Test` 類別實作測試，在達成`功能完整`且`測試邏輯合理`的情況下，method名稱、參數、回傳值皆不拘。
