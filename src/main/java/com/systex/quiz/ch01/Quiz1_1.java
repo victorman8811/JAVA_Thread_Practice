@@ -69,17 +69,18 @@ public class Quiz1_1 {
 
     public int maxNumber(List<Integer> list) {
         // Todo Case
-        return 0;
+        return Collections.max(list);
     }
 
     public int sumAllNumbers(List<Integer> list) {
         // Todo Case
-        return 0;
+        int sum = list.stream().mapToInt(Integer::intValue).sum();
+        return sum;
     }
 
     public int itemCounts(List<Integer> list) {
         // Todo Case
-        return 0;
+        return list.size();
     }
 
 }
