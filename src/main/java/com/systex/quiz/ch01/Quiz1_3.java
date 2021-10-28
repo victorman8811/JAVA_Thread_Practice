@@ -7,47 +7,50 @@ public class Quiz1_3 {
 
     public Integer getValueByKey(Map<String, Integer> map, String key) {
         // Todo Case
-        return 0;
+        return map.get(key);
     }
 
     public Map<String, Integer> insertValue(Map<String, Integer> map, String key, Integer value) {
         // Todo Case
-        return Collections.emptyMap();
+        map.put(key,value);
+        return map;
     }
 
     public Map<String, Integer> updateValue(Map<String, Integer> map, String key, Integer value) {
         // Todo Case
-        return Collections.emptyMap();
+        map.put(key, value);
+        return map;
     }
 
     public Map<String, Integer> removeValueByKey(Map<String, Integer> map, String key) {
         // Todo Case
-        return Collections.emptyMap();
+        map.remove(key);
+        return map;
     }
 
     public boolean checkKeyExists(Map<String, Integer> map, String key) {
         // Todo Case
-        return false;
+        return map.containsKey(key);
     }
 
     public boolean checkMapEmpty(Map<String, Integer> map) {
         // Todo Case
-        return false;
+        return map.isEmpty();
     }
 
     public int maxNumber(Map<String, Integer> map) {
         // Todo Case
-        return 0;
+        return Collections.max(map.values());
     }
 
     public int sumAllNumbers(Map<String, Integer> map) {
         // Todo Case
-        return 0;
+        return map.values().stream().mapToInt(Integer::intValue).sum();
     }
 
     public int itemCounts(Map<String, Integer> map) {
         // Todo Case
-        return 0;
+        return map.size();
     }
 
 }
