@@ -27,7 +27,7 @@ public class Quiz2_1 {
     public boolean allNumbersBiggerThan10(Collection<Integer> c) {
         // Todo Case
         List<Integer> ans = new ArrayList<Integer>();
-        ans = c.stream().filter(s -> s.intValue() < 10).collect(Collectors.toList());
+        ans = c.stream().filter(s -> s < 10).collect(Collectors.toList());
         if (ans.isEmpty() == false) {
 
             return false;
@@ -39,7 +39,7 @@ public class Quiz2_1 {
     public boolean anyNumberBiggerThan10(Collection<Integer> c) {
         // Todo Case
         List<Integer> ans = new ArrayList<Integer>();
-        ans = c.stream().filter(s -> s.intValue() > 10).collect(Collectors.toList());
+        ans = c.stream().filter(s -> s > 10).collect(Collectors.toList());
         if (ans.isEmpty() == true) {
 
             return false;
