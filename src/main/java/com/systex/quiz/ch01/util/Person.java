@@ -17,14 +17,22 @@ public class Person {
         this.name = name;
     }
 
-    public boolean equals(Person temp) {
-        return temp.getName().equals(this.getName());
+    public boolean equals(Object temp) {
+        Person person = (Person) temp;
+        return getName() == person.getName();
     }
 
     @Override
     public int hashCode() {
 
         return name.hashCode();
+
+    }
+
+    @Override
+    public String toString(){
+
+        return  this.name;
 
     }
 
