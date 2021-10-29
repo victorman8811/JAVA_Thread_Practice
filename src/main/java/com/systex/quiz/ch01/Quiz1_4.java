@@ -17,10 +17,10 @@ public class Quiz1_4 {
         temp2.addAll(list2);
 
 
-        for(int i=0;i< temp1.size();i++){
+        for (int i = 0; i < temp1.size(); i++) {
 
-            for(int j=0;j< temp2.size();j++){
-                if(temp2.get(j).getName()==temp1.get(i).getName()){
+            for (int j = 0; j < temp2.size(); j++) {
+                if (temp2.get(j).getName() == temp1.get(i).getName()) {
                     temp2.remove(j);
                 }
             }
@@ -30,18 +30,18 @@ public class Quiz1_4 {
         temp1.addAll(temp2);
 
         Set<Person> ans = new HashSet<Person>(temp1);
-        ArrayList<Person> ans2 = new ArrayList<Person>(ans);
 
-        for(int i =0;i< ans2.size();i++) {
-            System.out.println(ans2.get(i).hashCode());
-        }
         return ans;
 
     }
 
     public Set<Person> getIntersectionFrom2Sets(Set<Person> set1, Set<Person> set2) {
         // Todo Case
-        return Collections.emptySet();
+        Set<Person> ans = new HashSet<Person>(set1);
+
+        ans.retainAll(set2);
+
+        return ans;
     }
 
 }
