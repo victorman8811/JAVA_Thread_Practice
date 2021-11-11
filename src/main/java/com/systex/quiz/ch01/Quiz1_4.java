@@ -16,7 +16,6 @@ public class Quiz1_4 {
         temp1.addAll(list1);
         temp2.addAll(list2);
 
-
         for (int i = 0; i < temp1.size(); i++) {
 
             for (int j = 0; j < temp2.size(); j++) {
