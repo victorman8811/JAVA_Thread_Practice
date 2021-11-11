@@ -43,8 +43,8 @@ public class Quiz1_1 {
 
     public List<String> sortList(List<String> list) {
         // Todo Case
-        return Collections.emptyList();
-
+        Collections.sort(list);
+        return list;
     }
 
     public List<String> copyList(List<String> list) {

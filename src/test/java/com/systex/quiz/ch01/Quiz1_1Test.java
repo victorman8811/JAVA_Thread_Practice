@@ -104,6 +104,7 @@ public class Quiz1_1Test {
         assertEquals("[apple, banana, cat, dog, elephant, fox]", res1.toString());
         assertEquals("[apple, banana, cat]", input1.toString());
         assertEquals("[dog, elephant, fox]", input2.toString());
+
     }
 
     @Test
