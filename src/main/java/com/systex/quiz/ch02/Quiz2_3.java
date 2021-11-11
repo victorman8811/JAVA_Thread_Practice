@@ -10,7 +10,7 @@ public class Quiz2_3 {
 
     public int sumOddNumbers(Collection<Integer> c) {
 
-        int ans = c.stream().filter(x -> x % 2 == 1).mapToInt((a) -> a).sum();
+        int ans = c.stream().filter(x -> x % 2 == 1).mapToInt(Integer::intValue).sum();
 
         return ans;
 
