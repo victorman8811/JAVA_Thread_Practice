@@ -38,6 +38,7 @@ public class Quiz4 {
             rs = ps.getGeneratedKeys();
             while (rs.next()) {
                 id = rs.getInt(1);
+
             }
 
         } catch (Exception e) {

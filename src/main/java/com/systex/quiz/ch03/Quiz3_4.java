@@ -21,6 +21,7 @@ public class Quiz3_4 {
         // Todo Case
         for (int i = 0; i < horseAmount; i++) {
             int horseNum = i;
+
             horse[i] = new Thread(() -> {
                 try {
                     int positon = 0;
@@ -28,14 +29,16 @@ public class Quiz3_4 {
 
                     while (positon < 100) {
                         positon = positon + nextStep;
+                        horseRacingUI.setHorsePosition(horseNum+1, positon);
+                        System.out.println(Thread.currentThread().getName()+ ":" + horseNum);
                         if (positon >= 100) {
                             positon = 100;
                             if (isWin.get() == 0) {
                                 isWin.getAndIncrement();
-                                horseRacingUI.setMessage("Horse " + horseNum + " win");
+                                horseRacingUI.setMessage("Horse " + (horseNum+1) + " win");
                             }
                         }
-                        horseRacingUI.setHorsePosition(horseNum+1, positon);
+
                         nextStep = (int) (Math.random() * 100) + 1;
                         sleep((int) (Math.random() * (3000 - 1000 + 1)) + 1000);
                     }
@@ -52,7 +55,9 @@ public class Quiz3_4 {
     }
 
     public static void main(String[] args) {
+        
         horseRacing();
+
     }
 
 }

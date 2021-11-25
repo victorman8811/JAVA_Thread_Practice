@@ -49,7 +49,7 @@ public class Quiz4Test {
     @Test
     void dataUpdate() {
         Quiz4 quiz = new Quiz4();
-        int seq = 1;
+        int seq = 25;
         String task_name = "5x7";
         String description = "uuu";
 
