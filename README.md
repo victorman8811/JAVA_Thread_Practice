@@ -1,48 +1,4 @@
-# Java Fundamentals Self-Study and Quiz Part3
-
-## Chapter 1
-
-本章節將練習使用 Collection
-
-其中包含案例如下：
-
-- Quiz1_1: 練習 List 常用函式
-- Quiz1_2: 練習 Set 常用函式
-- Quiz1_3: 練習 Map 常用函式
-- Quiz1_4: 練習 Object Method override 時機與修改方式
-  - 修改 `Person` 類別，通過測試
-
-**Action:**
-
-請完成 `Quiz1_x` 類別，使其對應的測試類別 `Quiz1_xTest` 通過所有測試。
-
-※ 不可使用 Stream 方式完成
-
----
-
-## Chapter 2
-
-本章節將練習使用 Stream 與 Lambda
-
-其中包含案例如下：
-
-- Quiz2_1: 練習常用函式
-- Quiz2_2: 練習需要使用 Lambda 的常用函式
-- Quiz2_3: 練習如何使用 Stream 轉換資料
-- Quiz2_4: 綜合練習
-  - `wordCounts()`: 列出文章中的單字總數
-  - `wordCounts(word)`: 列出文章中的特定單字總數，不區分大小寫
-  - `getTopNLongerWords(n)`: 取得文章中長度排名前 n 名的單字清單，不區分大小寫
-
-※ 使用 Stream 完成上述未完成函式，使其通過測試
-  
-**Action:**
-
-請完成 `Quiz2_x` 類別，使其對應的測試類別 `Quiz2_xTest` 通過所有測試。
-
----
-
-## Chapter 3
+# JAVA_Thread_Practice
 
 本章節將練習使用 Thread
 
@@ -82,25 +38,3 @@
 
 請完成 `Quiz3_x` 類別，使其對應的測試類別 `Quiz3_xTest` 通過所有測試。
 
----
-
-## Chapter 4
-
-本章節將練習使用JDBC對資料庫進行簡單的CRUD操作
-
-其中需完成以下內容：
-
-- 在本機安裝postgresql
-  - https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=924
-- 建立後續例題需使用的任務清單table
-  - 取名為task_table
-  - 欄位包含task_seq設為PK，並會自動產生序號。
-  - 欄位包含task_name，用於儲存任務名且不可為空。
-  - 欄位包含description，用於儲存任務說明。
-- postgre driver需於MAVEN設定依賴。
-- 完成CRUD各功能，資料內容、實作方式不拘。
-- 基於上述完成的內容，寫出合理的test case以說明程式的正確性。
-
-**Action**
-
-請於 `Quiz4` 類別完成CRUD各功能實作，並於`Quiz4Test` 類別實作測試，在達成`功能完整`且`測試邏輯合理`的情況下，method名稱、參數、回傳值皆不拘。
