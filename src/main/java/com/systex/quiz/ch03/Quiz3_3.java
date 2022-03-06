@@ -4,10 +4,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Quiz3_3 {
 
-    //static int nowTemp = 28;
-    //static int setTemp;
-
-
     public static void airConditioner() {
         // Todo Case
 
@@ -144,7 +140,6 @@ public class Quiz3_3 {
 
     public static void main(String[] args) {
         // For Test Purpose
-        //airConditioner();
         grabMarbles();
     }
 }
